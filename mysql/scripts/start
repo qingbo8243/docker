@@ -8,8 +8,10 @@ set -e
 
 if [[ -e /scripts/firstrun ]]; then
 	# config mariadb
+	# add by lqb
+	chmod +x /scripts/firstrun_maria
 	/scripts/firstrun_maria
-    	rm /scripts/firstrun
+	rm /scripts/firstrun
 else
 	# Cleanup previous mariadb sockets
 	if [[ -e ${DATA_DIR}/mysql.sock ]]; then

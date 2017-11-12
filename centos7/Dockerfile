@@ -1,11 +1,9 @@
-#
-# MAINTAINER        Carson,C.J.Zeong <zcy@nicescale.com>
-# DOCKER-VERSION    1.6.2
-#
+# MAINTAINER        qingbo.liu<260831882@qq.com>
+# DOCKER-VERSION    17.06.2-ce
 # Dockerizing CentOS7: Dockerfile for building CentOS images
-#
-FROM       centos:centos7.1.1503
-MAINTAINER Carson,C.J.Zeong <zcy@nicescale.com>
+
+FROM        centos:centos7.1.1053
+MAINTAINER  qingbo.liu<260831882@qq.com>
 
 ENV TZ "Asia/Shanghai"
 ENV TERM xterm
@@ -18,9 +16,11 @@ RUN yum install -y curl wget tar bzip2 unzip vim-enhanced passwd sudo yum-utils 
     yum install -y --enablerepo=epel pwgen python-pip && \
     yum clean all
 
+#安装进程管理工具
 RUN pip install supervisor
+#添加supervisor主配置文件
 ADD supervisord.conf /etc/supervisord.conf
-
+#第一个目录存放启动其他进程的配置文件，第二个目录存放supervisord日志
 RUN mkdir -p /etc/supervisor.conf.d && \
     mkdir -p /var/log/supervisor
 

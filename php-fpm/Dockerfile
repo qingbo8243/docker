@@ -1,18 +1,16 @@
-#
-# MAINTAINER        Carson,C.J.Zeong <zcy@nicescale.com>
-# DOCKER-VERSION    1.6.2
-#
-# Dockerizing php-fpm: Dockerfile for building php-fpm images
-#
-FROM       csphere/centos:7.1
-MAINTAINER Carson,C.J.Zeong <zcy@nicescale.com>
+# MAINTAINER        qingbo.liu<260831882@qq.com>
+# DOCKER-VERSION    17.06.2-ce
+# Dockerizing CentOS7: Dockerfile for building CentOS images
 
-# Set environment variable
+FROM       csphere/centos:7.1
+MAINTAINER qingbo.liu<260831882@qq.com>
+
 ENV	APP_DIR /app
 
-RUN     yum -y swap -- remove fakesystemd -- install systemd systemd-libs && \
-        yum -y install nginx php-cli php-mysql php-pear php-ldap php-mbstring php-soap php-dom php-gd php-xmlrpc php-fpm php-mcrypt && \ 
-	yum clean all
+RUN   rpm --rebuilddb && \
+      yum -y swap -- remove fakesystemd -- install systemd systemd-libs && \
+      yum -y install nginx php-cli php-mysql php-pear php-ldap php-mbstring php-soap php-dom php-gd php-xmlrpc php-fpm php-mcrypt && \
+	  yum clean all
 
 ADD nginx_nginx.conf /etc/nginx/nginx.conf
 ADD	nginx_default.conf /etc/nginx/conf.d/default.conf
