@@ -8,9 +8,8 @@
 - 第五讲 Docker 实战之持续部署以及弹性伸缩
 - 第六讲 Docker 实战之存储
 
-此次课程是：希云cSphere免费为国内docker爱好者进行docker培训。希云cSphere致力于为企业提供专业的docker管理平台，和paas平台！
-
-**欢迎崔旬：400-686-1560**
+##课程火热进行中，接地气的**开源免费**培训课程，并有礼品赠送。[报名地址](https://csphere.cn/training)
+##第四讲 2015年7月15日 周二 晚21:00开课 [报名地址](https://csphere.cn/training)
 
 ###第一讲
 ```
@@ -22,6 +21,8 @@
 学会打包应用程序Application到image中，并支持快速部署
 讲述3-4个实际应用中的例子（绝对的干货)
 ```
+
+[培训视频:](http://pan.baidu.com/s/1hq2COGc)http://pan.baidu.com/s/1hq2COGc
 
 【配合视频，翻译的文章】
 
@@ -51,6 +52,8 @@
 3、容器部署好后，如何利用Jenkins自动做集成测试
 ```
 
+[培训视频:](http://pan.baidu.com/s/1bn4j9Ht)http://pan.baidu.com/s/1bn4j9Ht
+
 【培训代码】
 
 [OSC:](http://git.oschina.net/dockerf/second)http://git.oschina.net/dockerf/second
@@ -72,6 +75,8 @@
 学习如何设置，来收集该应用生成的日志，并图表化展现
 ```
 
+[培训视频:](http://pan.baidu.com/s/1qW7hNTq)http://pan.baidu.com/s/1qW7hNTq
+
 【培训代码】
 
 [OSC:](http://git.oschina.net/dockerf/third-train)http://git.oschina.net/dockerf/third-train
@@ -80,10 +85,5 @@
 
 [培训镜像:](http://market.qcloud.com/detail.php?productId=140)http://market.qcloud.com/detail.php?productId=140
 
-###第四讲(已完成)
+###第四讲(未开课)
 
-###第五讲(已完成)
-
-###第六讲(已完成)
-
-## [观看课程视频地址](https://csphere.cn/training)
