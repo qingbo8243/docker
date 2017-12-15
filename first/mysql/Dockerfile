@@ -2,7 +2,7 @@
 # DOCKER-VERSION    17.06.2-ce
 # Dockerizing CentOS7: Dockerfile for building CentOS images
 
-FROM       csphere/centos:7.1
+FROM       centos/centos7:7.1
 MAINTAINER qingbo.liu<260831882@qq.com>
 
 ENV DATA_DIR /var/lib/mysql

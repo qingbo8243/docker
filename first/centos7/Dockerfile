@@ -2,7 +2,7 @@
 # DOCKER-VERSION    17.06.2-ce
 # Dockerizing CentOS7: Dockerfile for building CentOS images
 
-FROM        centos:centos7.1.1053
+FROM        centos:7.1.1053
 MAINTAINER  qingbo.liu<260831882@qq.com>
 
 ENV TZ "Asia/Shanghai"
