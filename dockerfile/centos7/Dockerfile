@@ -1,8 +1,9 @@
 # MAINTAINER        qingbo.liu<260831882@qq.com>
 # DOCKER-VERSION    17.06.2-ce
 
-FROM        centos:7.1.1053
-MAINTAINER  qingbo.liu<260831882@qq.com>
+#默认从docker官网下载，如果配置了阿里镜像，即会从阿里镜像下载
+FROM          centos:7.1.1503
+MAINTAINER   qingbo.liu<260831882@qq.com>
 
 #时区
 ENV TZ "Asia/Shanghai"
@@ -29,6 +30,7 @@ ADD supervisord.conf /etc/supervisord.conf
 RUN mkdir -p /etc/supervisor.conf.d && \
     mkdir -p /var/log/supervisor
 
+#指定容器需要映射到宿主机器的端口
 EXPOSE 22
 
 ENTRYPOINT ["/usr/bin/supervisord", "-n", "-c", "/etc/supervisord.conf"]
