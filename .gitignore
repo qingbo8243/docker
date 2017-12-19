@@ -1,0 +1,6 @@
+# ºöÂÔ*.classÎÄ¼ş
+*.class
+#*.lock
+
+# ºöÂÔgradleÄ¿Â¼
+.idea/
