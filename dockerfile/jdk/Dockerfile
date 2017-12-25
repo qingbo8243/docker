@@ -4,9 +4,8 @@
 FROM          centos:7.1.1503
 MAINTAINER   qingbo.liu<260831882@qq.com>
 
-ENV JAVA_VERSION 1.7.0
-ENV JDK_HOME /usr/lib/jvm/java-1.7.0-openjdk
+#注意，dockerfile和jdk压缩文件要在同一目录
+ADD jdk-7u80-linux-x64.tar.gz /home/jdk/
 
-# Install jdk
-RUN  yum -y install java-${JAVA_VERSION}-openjdk java-${JAVA_VERSION}-openjdk-devel && \
-     yum clean all
+ENV JAVA_VERSION 1.7.0_80
+ENV JDK_HOME /home/jdk/jdk1.7.0_80
