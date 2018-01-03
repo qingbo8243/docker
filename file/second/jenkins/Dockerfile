@@ -1,5 +1,8 @@
-FROM       csphere/jdk:1.7.0
-MAINTAINER Carson,C.J.Zeong <zcy@nicescale.com>
+# MAINTAINER        qingbo.liu<260831882@qq.com>
+# DOCKER-VERSION    17.06.2-ce
+
+FROM          jdk:1.7
+MAINTAINER   qingbo.liu<260831882@qq.com>
 
 ENV JENKINS_HOME /var/jenkins_home
 ENV JENKINS_VERSION 1.609.1
