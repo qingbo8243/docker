@@ -5,6 +5,7 @@ FROM          jdk:latest
 MAINTAINER   qingbo.liu<260831882@qq.com>
 
 ADD ./apache-tomcat-7.0.55.tar.gz /home/tomcat/
+COPY ./server.xml /home/tomcat/apache-tomcat-7.0.55/conf/server.xml
 
 ENV TOMCAT_VERSION 7.0.55
 
