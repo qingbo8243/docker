@@ -6,7 +6,7 @@ MAINTAINER   qingbo.liu<260831882@qq.com>
 
 ADD  ./apache-maven-3.3.3-bin.tar.gz /home/maven/
 
-COPY ./settings.xml /home/maven/apache-maven-3.3.3/conf/settings.xml
+COPY settings.xml /home/maven/apache-maven-3.3.3/conf/settings.xml
 COPY ./jenkins.war $APP_DIR
 
 ENV MAVEN_VERSION 3.3.3
