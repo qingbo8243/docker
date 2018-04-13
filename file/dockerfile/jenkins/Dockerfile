@@ -8,6 +8,7 @@ ADD  ./jdk-7u80-linux-x64.tar.gz /home/jdk/
 ADD  ./jdk-8u151-linux-x64.tar.gz /home/jdk/
 ADD  ./apache-maven-3.3.3-bin.tar.gz /home/maven/
 ADD  ./apache-tomcat-7.0.55.tar.gz /home/tomcat/
+ADD  ./gradle-3.5.1-all.zip /home/gradle/
 
 ENV JAVA_VERSION 1.7.0_80
 #ENV JAVA_HOME /home/jdk/jdk1.7.0_80
@@ -24,6 +25,8 @@ ENV CATALINA_BASE /home/tomcat/apache-tomcat-7.0.55
 ENV CLASSPATH $JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 ENV PATH $PATH:$JAVA_HOME/bin:$CATALINA_HOME/lib:$CATALINA_HOME/bin:$M2_HOME/bin
 ENV APP_DIR ${CATALINA_HOME}/webapps/
+ENV LANG en_US.UTF-8
+ENV LC_ALL en_US.UTF-8
 
 COPY ./server.xml /home/tomcat/apache-tomcat-7.0.55/conf/server.xml
 COPY ./settings.xml /home/maven/apache-maven-3.3.3/conf/settings.xml

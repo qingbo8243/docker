@@ -9,6 +9,8 @@ MAINTAINER   qingbo.liu<260831882@qq.com>
 ENV TZ "Asia/Shanghai"
 #虚拟终端
 ENV TERM xterm
+ENV LANG en_US.UTF-8
+ENV LC_ALL en_US.UTF-8
 
 ADD aliyun-mirror.repo /etc/yum.repos.d/CentOS-Base.repo
 ADD aliyun-epel.repo /etc/yum.repos.d/epel.repo
